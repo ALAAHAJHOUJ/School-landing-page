@@ -78,7 +78,7 @@ function App() {
   return <>
       <div id='mee' className='bg-white rounded-[13px] box-border p-10 flex flex-col items-center gap-7 w-[80%] min-[600px]:w-[500px] aiderme'>
         <h1 className='font-[500] text-gray-800 text-[22px] w-full'>Quiz App</h1>
-        <p className='font-[600] text-[30px] text-center'>{`Yout score is ${score} of ${data.length}`} </p>
+        <p className='font-[600] text-[30px] text-center'>{`Your score is ${score} of ${data.length}`} </p>
         <button onClick={recommencer} type='submit' className='rounded-[12px] bg-blue-600 py-3 font-[600] text-white w-[150px] hover:bg-blue-400 cursor-pointer'>Restart</button>
       </div>
          </>
