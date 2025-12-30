@@ -2,53 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  width: 100%;
-  display: flex;
-  justify-content:center;
-  overflow: visible;
 }
 
 
+body{
+  background-color: #F5F5F5;
+}
 
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
 
-#root{
-  width: 100%;
-  display: flex;
+.container1{
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.btn{
+  background-color: white;
+  color:#212121;
+  cursor: pointer;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  display: inline-flex;
   justify-content: center;
-  align-items:start;
-  background-image: linear-gradient(to bottom, rgba(75, 59, 255, 0.192), rgba(121, 49, 255, 0.707));
-  min-height: 100vh;
+  align-items: center;
+}
+
+.herotext h1{
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
 }
 
 
-
-@media(min-height:300px){
-
-  #root{
-     align-items: center;
-  }
-
+.herotext p{
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
 }
 
 
-
-@media (max-height:300px){
-  #mee{
-    margin: 30px;
-  }
-}
-
-
-
-.correct{
-  border: 2px solid rgb(5, 108, 5);
-  background-color: rgba(130, 222, 130, 0.638);
-}
-
-
-.fausse{
-  border: 2px solid rgb(147, 14, 14);
-  background-color: rgba(211, 109, 109, 0.389);
-}
