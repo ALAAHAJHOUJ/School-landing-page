@@ -28,6 +28,7 @@
 
 .slider{
     overflow:hidden;
+    transition-duration: 0.8s;
 }
 
 
@@ -40,8 +41,10 @@
     transition: 0.5s;
 }
 
+
+
 .slider ul li{
-    width: 50%;
+    width: 25%;
     padding: 80px;
     flex-shrink: 1;
 }
