@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Header.css'
 import logo from'../../assets/logo.png'
 
 
 
 function Header() {
+  const [sticky,setStciky]=useState(false)
+
+
+  useEffect(()=>{
+    window.addEventListener("scroll",(e)=>{
+       window.scrollY>500?setStciky(true):setStciky(false)
+    })
+  },[])
   return (
     <>
-        <nav className='nav1 container1'>
+        <nav className={`nav1 container1 ${sticky?'nav2':''}`}>
               <img src={logo} alt="image de projet" className='image' />
               <ul className='elements'>
                     <li>Home</li>
