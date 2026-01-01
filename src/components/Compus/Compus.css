@@ -10,12 +10,34 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 
 .gallery img{
     width: 23%;
     border-radius: 10px;    
+}
+
+@media(width<800px)
+{
+    .gallery img{
+        width: 46%;
+    }
+
+    .gallery{
+        row-gap: 10px;
+    }
+}
+
+@media(width<500px){
+    .gallery img{
+        width: 100%;
+    }
+
+    .gallery{
+        row-gap: 20px;
+    }
 }
 
 

@@ -10,20 +10,20 @@ import user4 from '../../assets/user-4.png'
 
 
 function Testimonials() {
-  const slider=useRef();
-  const position=useRef(0);
+    const slider=useRef();
+    const position=useRef(0);
 
-  const handlebackBtn=()=>{
-     if(position.current<0){position.current+=25}
-     slider.current.style.transform=`translateX(${position.current}%)`
-  }
+    const handlebackBtn=()=>{
+        if(position.current<0){position.current+=100}
+        slider.current.style.transform=`translateX(${position.current}%)`
+    }
 
 
-  const handlenextBtn=()=>{
-     console.log(position.current)
-     if(position.current>-50) {position.current-=25;console.log("vrai")}
-     slider.current.style.transform=`translateX(${position.current}%)`
-  }
+    const handlenextBtn=()=>{
+        console.log(position.current)
+        if(position.current>-300) {position.current-=100;console.log("vrai")}
+        slider.current.style.transform=`translateX(${position.current}%)`
+    }
 
 
   return (
@@ -38,7 +38,7 @@ function Testimonials() {
                             <img src={user1} alt="image de projet" />
                             <div>
                                 <h3>William jackson</h3>
-                                <span>Edusity,USA</span>
+                                <span>Edusity, USA</span>
                             </div>
                         </div>
                         <p>
@@ -51,12 +51,12 @@ function Testimonials() {
                         <div className="user-info">
                             <img src={user2} alt="image de projet" />
                             <div>
-                                <h3>William jackson</h3>
-                                <span>Edusity,USA</span>
+                                <h3>Jacky dizelly</h3>
+                                <span>Edusity, USA</span>
                             </div>
                         </div>
                         <p>
-                            choosing to purpose my degree et Edusity was one the best decisions I've made Ever.
+                             choosing to purpose my degree et Edusity was one the best decisions I've made Ever.
                         </p>
                     </div>
                 </li>
@@ -65,8 +65,8 @@ function Testimonials() {
                         <div className="user-info">
                             <img src={user3} alt="image de projet" />
                             <div>
-                                <h3>William jackson</h3>
-                                <span>Edusity,USA</span>
+                                <h3>Jasmine Ferg</h3>
+                                <span>Edusity, USA</span>
                             </div>
                         </div>
                         <p>
@@ -79,8 +79,8 @@ function Testimonials() {
                         <div className="user-info">
                             <img src={user4} alt="image de projet" />
                             <div>
-                                <h3>William jackson</h3>
-                                <span>Edusity,USA</span>
+                                <h3>Daniel jackson</h3>
+                                <span>Edusity, USA</span>
                             </div>
                         </div>
                         <p>

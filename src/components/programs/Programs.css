@@ -6,7 +6,15 @@
     align-items: center;
     justify-content:space-between;
     flex-wrap: wrap;
+    row-gap: 20px;
 }
+
+@media(width<800px){
+    .programs{
+        justify-content: center;
+    }
+}
+
 
 
 .programs img{
@@ -17,9 +25,15 @@
 
 
 .program{
-    flex-basis: 31%;
+    width: 31%;
     flex-shrink: 0;
     position: relative;
+}
+
+@media(width<800px){
+    .program{
+        width: 80%;
+    }
 }
 
 
