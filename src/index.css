@@ -25,6 +25,13 @@ a{
   padding-right: 8%;
 }
 
+
+@media(width<1075px){
+  .container1{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
 .btn{
   background-color: white;
   color:#212121;
@@ -44,6 +51,12 @@ a{
   font-size: 60px;
   font-weight: 500;
   line-height: 60px;
+}
+
+@media(width<600px){
+  .herotext h1{
+    font-size: 40px
+  }
 }
 
 
