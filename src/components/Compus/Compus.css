@@ -26,13 +26,14 @@
     }
 
     .gallery{
-        row-gap: 10px;
+        gap: 10px;
+        justify-content: center;
     }
 }
 
 @media(width<500px){
     .gallery img{
-        width: 100%;
+        width: 90%;
     }
 
     .gallery{
@@ -45,4 +46,9 @@
     width: 30px;
     margin-left: 10px;
     height: auto;
+}
+
+
+.btn.btndark:hover{
+    opacity: 0.6;
 }
