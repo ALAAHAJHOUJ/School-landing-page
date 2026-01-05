@@ -6,6 +6,7 @@ import About from './components/About/About'
 import Title from './components/title/Title'
 import Compus from './components/Compus/Compus'
 import Testimonials from './components/TestImonials/Testimonials'
+import Form from './components/Form/Form'
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
         <Compus></Compus>
         <Title subTitle={"TESTIMONIALS"} title={"What Students Says"}></Title>
         <Testimonials></Testimonials>
+        <Title subTitle={"Contact Us"} title={"Get In Touch"}></Title>
+        <Form></Form>
     </>
   )
 }
