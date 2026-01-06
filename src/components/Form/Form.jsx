@@ -8,9 +8,64 @@ import arrow from '../../assets/white-arrow.png'
 
 function Form() {
   const [loading,setLoading]=useState(false)
-  const champsEmail=useRef()
+  const [error,setError]=useState({})
+  const champsNom=useRef()
+  const champsTextarea=useRef()
+  const champstelephone=useRef()
+
+  
+  //fonction finale pour l'envoi du formulaire
+  const envoyerFormulaire=()=>{
+
+  }
+
+
+
+  //valider le formulaire avant l'envoi
+  const valider=()=>{
+    console.log(champstelephone.current.value.trim()=="")
+      let envoyer=true
+      if(champsNom.current.value.trim()==""){
+          envoyer=false
+          setError((prev)=>{return {...prev,"champsNom":"champs requis"}})
+      }
+      else {
+          setError((prev)=>{return {...prev,"champsNom":undefined}})
+      }
+      
+
+      if(champsTextarea.current.value.trim()==""){
+          envoyer=false
+          setError((prev)=>{return {...prev,"champsTextarea":"champs requis"}})
+      }else {
+          setError((prev)=>{return {...prev,"champsTextarea":undefined}})
+      }
+
+
+      if(champstelephone.current.value.trim()==""){
+          envoyer=false
+          setError((prev)=>{return {...prev,"champsTelephone":"champs requis"}})
+      }
+      else {
+          setError((prev)=>{return {...prev,"champsTelephone":undefined}})
+      }
+
+      return true
+  }
+
+
+
+  //fonction pour gerer tous (validation et envoi) cette fonction permet de tester si la validation finale est bonne
   const Envoyer=(e)=>{
     e.preventDefault()
+
+    if(valider()==true){
+         envoyerFormulaire()
+    }
+    else 
+    {
+         console.log("veuillez réssayer")
+    }
   }
 
 
@@ -34,11 +89,14 @@ function Form() {
        <div className="contact-col">
           <form >
               <label htmlFor="name">Your name</label>
-              <input type="text" id='name' placeholder='Enter your name' />
+              <input ref={champsNom} type="text" id='name' placeholder='Enter your name' />
+              <span className='text-red-500 block mb-8'>{error.champsNom?error.champsNom:""}</span>
               <label htmlFor="phoneNumber">Phone Number</label>
-              <input type="tel" id='phoneNumber' placeholder='Enter your Phone number' />
+              <input ref={champstelephone} type="tel" id='phoneNumber' placeholder='Enter your Phone number' />
+              <span className='text-red-500 block mb-8'>{error.champsTelephone?error.champsTelephone:""}</span>
               <label htmlFor="message">Write your message</label>
-              <textarea name="" id="message" placeholder='write your message' cols={"30"} rows={"5"}></textarea>
+              <textarea ref={champsTextarea} name="" id="message" placeholder='write your message' cols={"30"} rows={"5"}></textarea>
+              <span className='text-red-500 block mb-8'>{error.champsTextarea?error.champsTextarea:""}</span>
               <button onClick={Envoyer} type='submit' className='btn btndark'>Send<img alt='image de projet' src={arrow} className='image1'></img></button>
           </form>
           <span className='tester11'>Sending ...</span>
