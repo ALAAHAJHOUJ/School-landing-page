@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Form.css'
 import msgicon from '../../assets/msg-icon.png'
 import locationIcon from '../../assets/location-icon.png'
@@ -7,13 +7,18 @@ import phoneIcon from '../../assets/phone-icon.png'
 import arrow from '../../assets/white-arrow.png'
 
 function Form() {
+  const [loading,setLoading]=useState(false)
+  const champsEmail=useRef()
   const Envoyer=(e)=>{
     e.preventDefault()
   }
+
+
+  
   return (
     <div className='contact'>
        <div className="contact-col">
-          <h3><span>Send a message</span><img src={msgicon} alt='image de projet'></img></h3>
+          <h3>Send a message<img src={msgicon} alt='image de projet'></img></h3>
           <p>
             feel free to reach out through contact form or find our contact 
             information below.Your feedback,questions,and suggestions are 

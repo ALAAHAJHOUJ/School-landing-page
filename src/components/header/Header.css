@@ -23,19 +23,21 @@
 @media(width<1075px){
     .elements{
         position: fixed;
-        width: 200px;
+        width:100%;
         flex-direction: column;
         background-color: #212EA0;
-        height: 100%;
-        right: -200px;
-        top: 0;
+        height:500px;
+        right:0px;
+        top:-500px;
         padding-top: 50px;
         transition: all;
         transition-duration: 0.8s;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
     }
 
     .visible{
-        right: 0;
+        top:0px;
     }
 }
 

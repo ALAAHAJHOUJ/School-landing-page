@@ -6,11 +6,27 @@
     justify-content: space-between;
 }
 
+@media(width<600px){
+    .contact{
+        flex-direction: column;
+    }
+}
+
+
+
 
 .contact-col{
     flex-basis: 48%;
     color: #676767;
 }
+
+@media(width<600px){
+    .contact-col{
+        flex-basis: 80%;
+    }
+}
+
+
 
 
 .contact-col h3{
