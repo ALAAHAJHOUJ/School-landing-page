@@ -11,18 +11,17 @@ import Form from './components/Form/Form'
 function App() {
   return (
     <>
-        <Header></Header>
-        <Hero></Hero>
-        <Programs></Programs>
-        <About></About>
-        <Title subTitle={"Gallery"} title={"What we Offer"}></Title>
-        <Compus></Compus>
-        <Title subTitle={"TESTIMONIALS"} title={"What Students Says"}></Title>
-        <Testimonials></Testimonials>
-        <Title subTitle={"Contact Us"} title={"Get In Touch"}></Title>
-        <Form></Form>
+      <Header></Header>
+      <Hero></Hero>
+      <Programs></Programs>
+      <About></About>
+      <Compus></Compus>
+      <Testimonials></Testimonials>
+      <Form></Form>
     </>
   )
 }
 
 export default App
+
+
