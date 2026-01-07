@@ -23,11 +23,10 @@ function Form() {
 
   //valider le formulaire avant l'envoi
   const valider=()=>{
-    console.log(champstelephone.current.value.trim()=="")
       let envoyer=true
       if(champsNom.current.value.trim()==""){
           envoyer=false
-          setError((prev)=>{return {...prev,"champsNom":"champs requis"}})
+          setError((prev)=>{return {...prev,"champsNom":"required field"}})
       }
       else {
           setError((prev)=>{return {...prev,"champsNom":undefined}})
@@ -36,7 +35,7 @@ function Form() {
 
       if(champsTextarea.current.value.trim()==""){
           envoyer=false
-          setError((prev)=>{return {...prev,"champsTextarea":"champs requis"}})
+          setError((prev)=>{return {...prev,"champsTextarea":"required field"}})
       }else {
           setError((prev)=>{return {...prev,"champsTextarea":undefined}})
       }
@@ -44,7 +43,7 @@ function Form() {
 
       if(champstelephone.current.value.trim()==""){
           envoyer=false
-          setError((prev)=>{return {...prev,"champsTelephone":"champs requis"}})
+          setError((prev)=>{return {...prev,"champsTelephone":"required field"}})
       }
       else {
           setError((prev)=>{return {...prev,"champsTelephone":undefined}})
