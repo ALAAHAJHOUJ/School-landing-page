@@ -23,8 +23,8 @@ function Form() {
 
             setState("loading")
             emailjs
-              .sendForm('service_6i6uqcr', 'template_i0iyat8',forms.current,{
-                publicKey:"8kFD5uFBz3jScJZHP"
+              .sendForm(process.env.REACT_APP_SERVICE,process.env.REACT_APP_TEMPLATE,forms.current,{
+                publicKey:process.env.REACT_APP_PUBLIC_KEY
               })
               .then(
                 () => {
