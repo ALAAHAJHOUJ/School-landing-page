@@ -5,7 +5,7 @@ import './Footer.css'
 function Footer() {
   return (
     <div className='footer'>
-        <p>&copy; alaa hajhouj 2026 </p>
+        <p>&copy; alaa hajhouj 2026 ,All rights reserved</p>
         <ul>
             <li id='elementli1'>HAJHOUJ </li>
             <li>ALAA</li>
