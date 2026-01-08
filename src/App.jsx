@@ -7,6 +7,7 @@ import Title from './components/title/Title'
 import Compus from './components/Compus/Compus'
 import Testimonials from './components/TestImonials/Testimonials'
 import Form from './components/Form/Form'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Testimonials></Testimonials>
         <Title subTitle={"Contact Us"} title={"Get In Touch"}></Title>
         <Form></Form>
+        <Footer></Footer>
     </>
   )
 }
