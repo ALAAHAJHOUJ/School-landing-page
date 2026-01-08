@@ -8,7 +8,7 @@ import './About.css'
 
 function About() {
   return (
-    <div className='about container1'>
+    <div id='about' className='about container1'>
        <div className="about-left">
           <img src={about} alt="image de projet" className='about-left-image' />
           <img src={playIcon} alt="image de projet" className='playIcon' />

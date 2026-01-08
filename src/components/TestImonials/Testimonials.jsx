@@ -27,7 +27,7 @@ function Testimonials() {
 
 
   return (
-    <div className='testimonials container1'>
+    <div id='testimonials' className='testimonials container1'>
         <img src={nextbtn} alt="image de projet" className='next-btn' onClick={()=>{handlenextBtn()}} />
         <img src={backbtn} alt="image de projet" className='back-btn' onClick={()=>{handlebackBtn()}} />
         <div  className="slider">

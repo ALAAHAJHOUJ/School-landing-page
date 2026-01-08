@@ -13,7 +13,7 @@ import Title from '../title/Title'
 
 function Programs() {
   return (
-    <div className='programs container1'>
+    <div id='programs' className='programs container1'>
         <Title subTitle={"Our Program"} title={"What we Offer"}></Title>
         <div className="program">
             <img src={program1} alt="image de projet" />

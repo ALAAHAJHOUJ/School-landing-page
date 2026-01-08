@@ -100,7 +100,7 @@ function Form() {
 
   
         return (
-          <div className='contact'>
+          <div id='contact' className='contact'>
             <div className="contact-col">
                 <h3>Send a message<img src={msgicon} alt='image de projet'></img></h3>
                 <p>

@@ -3,6 +3,7 @@ import './Header.css'
 import logo from'../../assets/logo.png'
 import menuIcon from '../../assets/menu-icon.png'
 import { IoMdCloseCircle } from 'react-icons/io'
+import { Link } from 'react-scroll'
 
 
 function Header() {
@@ -30,13 +31,13 @@ function Header() {
                 }
 
               <ul className={`elements ${cacher?'':'visible'}`}>
-                    <li>Home</li>
-                    <li>Program</li>
-                    <li>About Us</li>
-                    <li>Compus</li>
-                    <li>Testimonials</li>
+                    <li><Link to='home'  smooth={true} duration={500}>Home</Link></li>
+                    <li><Link to='programs' smooth={true} duration={500} offset={-50}>Programs</Link></li>
+                    <li><Link to='about' smooth={true} duration={500} offset={-200}>About</Link></li>
+                    <li><Link to='compus' smooth={true} duration={500} offset={-250}>compus</Link></li>
+                    <li><Link to='testimonials' smooth={true} duration={500} offset={-260}>Testimonials</Link></li>
                     <li>
-                      <button className='btn'>Contact Us</button>
+                      <Link to='contact' duration={500} smooth={true} offset={-250}><button className='btn'>Contact Us</button></Link>
                     </li>
               </ul>
         </nav>

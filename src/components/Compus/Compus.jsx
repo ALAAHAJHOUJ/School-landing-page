@@ -10,7 +10,7 @@ import whitearrow from '../../assets/white-arrow.png'
 
 function Compus() {
   return (
-    <div className='compus container1'>
+    <div id='compus' className='compus container1'>
         <div className="gallery">
             <img src={gallery1} alt="image de projet" />
             <img src={gallery2} alt="image de projet" />
