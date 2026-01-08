@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import about from '../../assets/about.png'
 import playIcon from '../../assets/play-icon.png'
 import './About.css'
+import Video from './Video/Video'
 
 
 
 
 function About() {
+  const [montrer,setMontrer]=useState(false)
   return (
     <div id='about' className='about container1'>
+       {montrer&&<Video cacher={()=>{setMontrer(false)}}></Video>}
        <div className="about-left">
-          <img src={about} alt="image de projet" className='about-left-image' />
-          <img src={playIcon} alt="image de projet" className='playIcon' />
+          <img src={about} alt="image de projet" className='about-left-image' onClick={()=>{setMontrer(true)}}  />
+          <img src={playIcon} alt="image de projet" className='playIcon'/>
        </div>
        <div className="about-right">
           <h3>ABOUT UNIVERSITY</h3>
